@@ -41,7 +41,8 @@ body {
 
 body {
   background-color: var(--bg);
-  color: var(--text);
+  color: white;
+  /* color: var(--text); */
 }
 
 a{
