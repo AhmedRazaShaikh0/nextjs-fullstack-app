@@ -31,7 +31,8 @@
 .input {
     background-color: transparent;
     border: none;
-    columns: var(--textSoft);
+    outline: none;
+    color: var(--textSoft);
 }
 
 .icons {
