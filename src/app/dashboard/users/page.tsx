@@ -6,8 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Pagination from "@/app/ui/dashboard/pagination/Pagination";
 
-export default async function page() {
-  const users = await fetchUsers();
+export default async function page({ searchParams }: any) {
+  const q = searchParams?.q || "";
+  const users = await fetchUsers(q);
   console.log("🚀 ~ page ~ users:", users);
   return (
     <div className={styles.container}>
